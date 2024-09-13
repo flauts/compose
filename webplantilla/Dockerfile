@@ -8,5 +8,4 @@ COPY httpd-vhosts.conf /usr/local/apache2/conf/extra/httpd-vhosts.conf
 RUN echo 'Include /usr/local/apache2/conf/extra/httpd-vhosts.conf' >> /usr/local/apache2/conf/httpd.conf
 
 # Copy the site files to the appropriate directories
-COPY ./webplantilla /usr/local/apache2/htdocs/webplantilla
-COPY ./websimple /usr/local/apache2/htdocs/websimple
+COPY . /usr/local/apache2/htdocs/webplantilla
